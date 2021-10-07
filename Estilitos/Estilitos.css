@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Azeret+Mono&family=Oswald:wght@200&display=swap');
+*{
+	margin:0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+img{
+	height: 460px;
+}
+.carousel-item{
+	padding-left: 400px;
+	padding-right: 400px;
+	padding-bottom: 100px;
+}
+.carousel-item img{
+	height: 400px;
+	max-width: ;
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 50%;
+}
+.logo img{
+	height: 50px;
+}
+.logo img:hover{
+	background-color: red;
+}
+.menu{
+	flex-grow: 1;
+}
+.bodyBack{
+	background-color: #A38483;
+	min-height: 435px;
+}
+.fuenteAllison{
+	color: #BC5E1A;
+	font-family: 'Allison', cursive;
+	font-size: 2.5rem;
+}
+.fuenteAzeret{
+	font-family: 'Azeret Mono', monospace;
+	font-size: 5rem;
+	color: #BC5E1A;
+}
+.fuenteAzeret p{
+	font-size: 2.5rem;
+	color: #40F034;
+}
+.fuenteOswald{
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.563rem;
+	color: #BEE4F7;
+}
+.fuenteOswald span{
+	color: #40F034;
+}
+.mapas{
+	width: 85%;
+}
+.mapas:hover{
+	width: 100%;
+	transition: 1s;
+}
+.animatedBold:hover{
+	font-weight: bold;
+}
+.justifyCenter{
+	justify-self: center;
+}
+.textAlignCenter{
+	text-align: center;
+}
+.underline:hover{
+	text-decoration: underline;
+}
+/*ESTILO HEADER Y FOOTER*/
+.fuenteAllison a{
+	color: #BEE4F7 !important;
+	text-decoration: none;
+}
+/*HEADER*/
+#header{
+	display: flex;
+	background-color: #2E522C;
+}
+.headerStyle{
+	justify-content: space-around;
+	width: 100%;
+}
+.headerStyle a:hover{
+	background-color: red;
+}
+/*CONTENEDOR INDEX*/
+#bodyIndex{
+	display: grid;
+	grid-template-areas: 
+	"title1	img	title2"
+	"text1	img text2"
+	"title3	img title4"
+	"text3	img text4"
+	"como	como como"
+	"text5 text5 text5";
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: .1fr 1fr 1fr 1fr .1fr 1fr;
+	grid-gap: 0.313rem;
+}
+.titleUno{
+	grid-area: title1;
+}
+.titleDos{
+	grid-area: title2;
+}
+.titleTres{
+	grid-area: title3;
+}
+.titleCuatro{
+	grid-area: title4;
+}
+.pizza{
+	justify-self: start;
+	grid-area: img;
+	align-self: center;
+}
+.textUno{
+	grid-area: text1;
+}
+.textDos{
+	grid-area: text2;
+}
+.textTres{
+	grid-area: text3;
+}
+.textCuatro{
+	grid-area: text4;
+}
+.como{
+	grid-area: como;
+}
+.textCinco{
+	justify-content: justify;
+	align-items: center;
+	grid-area: text5;
+}
+/*CONTENEDOR SUCURSALES*/
+#bodySucursales{
+	min-height: 569px;
+	display: grid;
+	grid-template-areas: 
+	"title title title 	title"
+	"caseros ramos palomar vsarm"
+	"tel1cas tel1ram tel1pal tel1vsarm"
+	"tel2cas none	 none	 tel2vsarm"
+	"celcas	celram	celpal	celvsarm"
+	"mapacas maparam mapapal mapavsarm";
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: .1fr .1fr .1fr .1fr .1fr .1fr;
+	grid-gap: 5px;
+}
+.placeholder{
+	display: none;
+}
+.placeholderDos{
+	display: none;
+}
+.title{
+	grid-area: title;
+}
+.caseros{
+	grid-area: caseros;
+}
+.ramos{
+	grid-area: ramos;
+}
+.palomar{
+	grid-area: palomar;
+}
+.vsarm{
+	grid-area: vsarm;
+}
+.telUnoCaseros{
+	grid-area: tel1cas;
+}
+.telUnoRamos{
+	grid-area: tel1ram;
+}
+.telUnoPalomar{
+	grid-area: tel1pal;
+}
+.telUnoVsarm{
+	grid-area: tel1vsarm;
+}
+.telDosCaseros{
+	grid-area: tel2cas;
+}
+.telDosVsarm{
+	grid-area: tel2vsarm;
+}
+.celCaseros{
+	grid-area: celcas;
+}
+.celRamos{
+	grid-area: celram;
+}
+.celPalomar{
+	grid-area: celpal;
+}
+.celVsarm{
+	grid-area: celvsarm;
+}
+.mapaCaseros{
+	grid-area: mapacas;
+}
+.mapaRamos{
+	grid-area: maparam;
+}
+.mapaPalomar{
+	grid-area: mapapal;
+}
+.mapaVsarm{
+	grid-area: mapavsarm;
+}
+/*CONTENEDOR CONTACTO*/
+#bodyContacto{
+	min-height: 569px;
+	display: flex;
+	justify-content: center;
+}
+form label{
+	font-size: 6.25rem;
+	font-family: 'Allison', cursive;
+}
+form input[type="submit"]:hover{
+	cursor:pointer;
+	background-color: white;
+}
+form input[type="reset"]:hover{
+	cursor:pointer;
+	background-color: white;
+}
+.botonOrden{
+	display: flex;
+	justify-content: space-around;
+}
+.button{
+	border: black;
+	font-size: 2.188rem;
+	height: 50px;
+	width: 150px;
+	border-radius: 50px;
+	background-color: red;
+}
+#mensaje{
+	width: 500px;
+	height: 100px;
+	border: 1px solid black;
+	border-radius: 3px;			
+	margin: 8px 0;
+	resize: none;
+	display: block;
+}
+.rellenarContacto{
+	width: 500px;
+	height: 50px;
+	background: #2E522C;
+}
+.rellenarContacto:focus{
+	background: none
+}
+/*CONTENEDOR MENSAJE*/
+#bodyMensaje{
+	min-height: 569px;
+}
+#bodyMensaje p{
+	padding-top: 100px;
+}
+#bodyMensaje p a{
+	font-size: 5.625rem;
+}
+/*CONTENEDOR MENU*/
+#bodyMenu{
+	min-height: 569px;
+	background-color: black;
+	display: grid;
+	grid-template-areas:
+	". titulo ."
+	"pizzas text empanadas";
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: .1fr .1fr;
+}
+.tituloMenu{
+	grid-area: titulo;
+}
+.tituloMenu:hover{
+	background-color: white;
+}
+.textMenu{
+	grid-area: text;
+	font-size: 4.063rem;
+}
+.pizzasMenu{
+	grid-area: pizzas;
+}
+.empanadasMenu{
+	text-align: end;
+	grid-area: empanadas;
+}
+.imagenGrande img:hover{
+	height: 32.1rem;
+	transition: 0.4s;
+	cursor: crosshair;
+}
+/*AcercaDe*/
+#bodyAcercaDe{
+	min-height: 569px;
+}
+#redes{
+	display: flex;
+	justify-content: space-around;
+}
+#redes img{
+	height: 100px;
+}
+/*FOOTER*/
+#footer{
+	display: flex;
+	background-color: #2E522C;
+}
+#footer .menu div{
+	font-size: 1.063rem;
+	color: black;
+	flex-wrap: wrap;
+}
+@media (min-width: 992px) and (max-width: 1199px){
+	.carousel-item{
+		display: none;
+	}
+	.carousel-item img{
+		display: none!important;
+	}
+	.carousel-control-next, .carousel-control-prev {
+	    display: none;
+	}
+	.displayNone{
+		display: none;
+	}
+	.pizza{
+		display: none;
+	}
+	.fuenteAzeret{
+		font-size: 3rem;
+	}
+	#bodyIndex{
+		grid-template-areas: 
+		"title1	como title2"
+		"text1	text5 text2"
+		"title3	. title4"
+		"text3	. text4";
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: .1fr 1fr .1fr 1fr;
+		grid-gap: 0px;
+	}
+	#bodyMenu{
+		min-height: 460px;
+	}
+	.textMenu{
+		font-size: 3rem;
+	}
+	#bodyMensaje p a{
+		font-size: 4rem;
+	}
+	#bodyMenu{
+		grid-template-areas:
+		"titulo  titulo text"	
+		"empanadas pizzas text";
+		grid-template-columns: .1fr 1fr 1fr;
+		grid-template-rows: .1fr 1fr;
+	}
+	.imagenGrande img{
+		height: 400px;
+	}
+	.imagenGrande img:hover{
+		height: 400px;
+		transition: 0ms;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.carousel-item{
+		display: none;
+	}
+	.carousel-item img{
+		display: none!important;
+	}
+	.carousel-control-next, .carousel-control-prev {
+	    display: none;
+	}
+	.displayNone{
+		display: none;
+	}
+	.headerStyle{
+		justify-content: space-around;
+		flex-direction: row;
+	}
+	.fuenteAzeret{
+		font-size: 2rem;
+	}
+	.fuenteOswald{
+		font-size: 1.2rem;
+	}
+	#bodyIndex{
+		grid-template-areas: 
+		"title1	title2	title3 title4"
+		"text1	text2 text3 text4"
+		"como como como como"
+		"text5 text5 text5 text5";
+		grid-template-columns: 3fr 3fr 3fr 3fr;
+		grid-template-rows: .1fr .8fr .1fr .1fr;
+		grid-gap: 0px;
+	}
+	.pizza{
+		display: none;
+	}
+	#bodySucursales{
+		min-height: 569px;
+		display: grid;
+		grid-template-areas: 
+		"title title title title title"
+		"caseros mapacas tel1cas tel2cas celcas"
+		"ramos maparam tel1ram placeholder celram"
+		"palomar mapapal tel1pal placeholderDos celpal"
+		"vsarm mapavsarm tel1vsarm tel2vsarm celvsarm";
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: .1fr .1fr .1fr .1fr .1fr;
+		grid-gap: 5px;
+	}
+	.placeholder{
+		grid-area: placeholder;
+		display: block;
+	}
+	.placeholderDos{
+		grid-area: placeholderDos;
+		display: block;
+	}
+	.mapas{
+		height: 100%;
+	}
+	#bodyMenu{
+		grid-template-areas:
+		"titulo  titulo text"	
+		"empanadas pizzas text";
+		grid-template-columns: .1fr 1fr 1fr;
+		grid-template-rows: .1fr 1fr;
+		min-height: 460px;
+	}
+	.textMenu{
+		font-size: 2rem;
+	}
+	#bodyMensaje p a{
+		font-size: 2rem;
+	}
+	.imagenGrande img{
+		height: 400px;
+	}
+	.imagenGrande img:hover{
+		height: 450px;
+		transition: 0ms;
+	}
+}
+@media (min-width: 576px) and (max-width: 767px){
+	.carousel-item{
+		display: none;
+	}
+	.carousel-item img{
+		display: none!important;
+	}
+	.carousel-control-next, .carousel-control-prev {
+	    display: none;
+	}
+	.displayNone{
+		display: none;
+	}
+	#header{
+		min-height: 130px;
+	}
+	.headerStyle{
+		justify-content: space-around;
+		flex-direction: row;
+	}
+	.fuenteAzeret{
+		font-size: 1.5rem;
+	}
+	.fuenteOswald{
+		font-size: 1.2rem;
+	}
+	.fuenteAllison{
+		font-size: 2rem;
+	}
+	.logo a img{
+		height: 40px;
+	}
+	#header{
+		max-height: 45px;
+	}
+	#bodyIndex{
+		grid-template-areas: 
+		"title1 img title2"
+		"text1	img text2"
+		"title3 como title4"
+		"text3 text5 text4";
+		grid-template-columns: 1fr 1.8fr 1fr;
+		grid-template-rows: .1fr 1fr .1fr .1fr;
+		grid-row-gap: 3px;
+	}
+	.textCuatro{
+		border: solid 0.5px grey;
+	}
+	.textTres{
+		border: solid 0.5px grey;
+	}
+	.pizza img{
+		height: 200px;
+	}
+	#bodyContacto{
+	min-height: 450px;
+	}
+	#bodySucursales{
+		min-height: 569px;
+		display: grid;
+		grid-template-areas: 
+		"title title title title title"
+		"caseros mapacas tel1cas tel2cas celcas"
+		"ramos maparam tel1ram placeholder celram"
+		"palomar mapapal tel1pal placeholderDos celpal"
+		"vsarm mapavsarm tel1vsarm tel2vsarm celvsarm";
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: .1fr .1fr .1fr .1fr .1fr;
+		grid-gap: 5px;
+	}
+	.placeholder{
+		grid-area: placeholder;
+		display: block;
+	}
+	.placeholderDos{
+		grid-area: placeholderDos;
+		display: block;
+	}
+	.mapas{
+		height: 100%;
+	}
+	#bodyMenu{
+		grid-template-areas:
+		"titulo titulo titulo"
+		"text text text"	
+		"empanadas none pizzas";
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: .1fr .1fr 1fr;
+		min-height: 680px;
+	}
+	.imagenGrande img{
+		height: 300px;
+	}
+	.imagenGrande img:hover{
+		height: 350px;
+		transition: 0ms;
+	}
+	.textMenu{
+		font-size: 3rem;
+	}
+	#bodyMensaje p a{
+		font-size: 1.8rem;
+	}
+	#bodyAcercaDe{
+		min-height: 450px;
+	}
+	#footer .menu div{
+		font-size: 0.75rem;
+	}
+}
+@media (max-width: 575px){
+	.carousel-item{
+		display: none;
+	}
+	.carousel-item img{
+		display: none!important;
+	}
+	.carousel-control-next, .carousel-control-prev {
+	    display: none;
+	}
+	.displayNone{
+		display: none;
+	}
+	#header{
+		min-height: 130px;
+	}
+	.headerStyle{
+		justify-content: space-around;
+		flex-direction: row;
+	}
+	.fuenteAzeret{
+		font-size: 1.65rem;
+	}
+	.fuenteOswald{
+		font-size: 1.3rem;
+	}
+	.fuenteAllison{
+		font-size: 1.5rem;
+	}
+	.logo a img{
+		height: 25px;
+	}
+	#header{
+		max-height: 45px;
+	}
+	#bodyIndex{
+		grid-template-areas: 
+		"title1 title2"
+		"text1	text2"
+		"title3 title4"
+		"text3 text4";
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: .1fr .1fr .1fr .1fr;
+	}
+	.pizza img{
+		display: none;
+	}
+	.como{
+		display: none;
+	}
+	.textCinco{
+		display: none;
+	}
+	#bodySucursales{
+		min-height: 569px;
+		display: grid;
+		grid-template-areas: 
+		"title title title title title"
+		"caseros mapacas tel1cas tel2cas celcas"
+		"ramos maparam tel1ram placeholder celram"
+		"palomar mapapal tel1pal placeholderDos celpal"
+		"vsarm mapavsarm tel1vsarm tel2vsarm celvsarm";
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: .1fr .1fr .1fr .1fr .1fr;
+		grid-gap: 5px;
+	}
+	.placeholder{
+		grid-area: placeholder;
+		display: block;
+	}
+	.placeholderDos{
+		grid-area: placeholderDos;
+		display: block;
+	}
+	.mapas{
+		height: 100%;
+	}
+	#bodyContacto{
+		min-height: 380px;
+	}
+	form label{
+		font-size: 4rem;
+	}
+	#mensaje{
+		width: 380px;
+	}
+	.rellenarContacto{
+		width: 380px;
+	}
+	#bodyMensaje p a{
+		font-size: 1.9rem;
+	}
+	#bodyMenu{
+		grid-template-areas:
+		"titulo titulo titulo"
+		"text text text"	
+		"empanadas . pizzas";
+		grid-template-columns: .1fr 1fr 1fr;
+		grid-template-rows: .1fr .1fr 1fr;
+	}
+	.imagenGrande img{
+		height: 200px;
+	}
+	.imagenGrande img:hover{
+		height: 400px;
+		transition: 0ms;
+	}
+	.textMenu{
+		font-size: 1.4rem;
+	}
+	#bodyMensaje p a{
+		font-size: 1.8rem;
+	}
+	#bodyAcercaDe{
+		min-height: 450px;
+	}
+	#footer .menu div{
+		font-size: 0.75rem;
+	}
+}
